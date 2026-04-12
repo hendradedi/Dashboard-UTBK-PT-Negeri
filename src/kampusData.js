@@ -1,38 +1,135 @@
 export const ptnData = [
-  // --- HIGHLIGHT: PNF FIPP UNNES ---
-  { id: 1, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Luar Sekolah / Pendidikan Non Formal (PNF)", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 654, passingGrade: 580, isFeatured: true, description: "✨ Pilihan Paling Cerdas Mba/Bro! Lulusannya banyak dicari dari sektor pemerintahan sampai NGO internasional. Auto glow up masa depan!" },
-  
-  // --- PRODI KEPENDIDIKAN LAIN (UNNES) ---
-  { id: 2, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 1200, passingGrade: 620, isFeatured: false },
-  { id: 3, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Guru Sekolah Dasar (PGSD)", rumpun: "Soshum", kategori: "Kependidikan", dt: 200, peminat: 3500, passingGrade: 640, isFeatured: false },
-  { id: 4, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Matematika", rumpun: "Saintek", kategori: "Kependidikan", dt: 60, peminat: 890, passingGrade: 615, isFeatured: false },
-  
-  // --- PTN BESAR LAINNYA ---
-  { id: 5, univ: "Universitas Indonesia (UI)", prodi: "Pendidikan Dokter", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 54, peminat: 3045, passingGrade: 745, isFeatured: false },
-  { id: 6, univ: "Universitas Indonesia (UI)", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 60, peminat: 2800, passingGrade: 725, isFeatured: false },
-  { id: 7, univ: "Universitas Gadjah Mada (UGM)", prodi: "Psikologi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 71, peminat: 3856, passingGrade: 720, isFeatured: false },
-  { id: 8, univ: "Institut Teknologi Bandung (ITB)", prodi: "Sekolah Teknik Elektro & Informatika (STEI)", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 150, peminat: 3200, passingGrade: 735, isFeatured: false },
-  
-  // --- UNIVERSITAS PENDIDIKAN (UPI, UNY, UM) ---
-  { id: 9, univ: "Universitas Pendidikan Indonesia (UPI)", prodi: "Pendidikan Khusus", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 512, passingGrade: 590, isFeatured: false },
-  { id: 10, univ: "Universitas Pendidikan Indonesia (UPI)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 480, passingGrade: 575, isFeatured: false },
-  { id: 11, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Teknik Otomotif", rumpun: "Saintek", kategori: "Kependidikan", dt: 40, peminat: 600, passingGrade: 610, isFeatured: false },
-  { id: 12, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Bahasa Inggris", rumpun: "Soshum", kategori: "Kependidikan", dt: 60, peminat: 1100, passingGrade: 650, isFeatured: false },
-  { id: 13, univ: "Universitas Negeri Malang (UM)", prodi: "Pendidikan Jasmani", rumpun: "Saintek", kategori: "Kependidikan", dt: 90, peminat: 850, passingGrade: 560, isFeatured: false },
-  
-  // --- PTN UMUM ---
-  { id: 14, univ: "Universitas Padjadjaran (UNPAD)", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 80, peminat: 3100, passingGrade: 695, isFeatured: false },
-  { id: 15, univ: "Universitas Airlangga (UNAIR)", prodi: "Kedokteran Gigi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 1800, passingGrade: 710, isFeatured: false },
-  { id: 16, univ: "Universitas Brawijaya (UB)", prodi: "Ilmu Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 180, peminat: 2500, passingGrade: 660, isFeatured: false },
-  { id: 17, univ: "Universitas Diponegoro (UNDIP)", prodi: "Ilmu Kelautan", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 120, peminat: 450, passingGrade: 580, isFeatured: false },
-  { id: 18, univ: "Institut Teknologi Sepuluh Nopember (ITS)", prodi: "Teknik Fisika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 400, passingGrade: 640, isFeatured: false },
-  { id: 19, univ: "Universitas Sebelas Maret (UNS)", prodi: "Pendidikan Guru PAUD", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 210, passingGrade: 585, isFeatured: false },
-  { id: 20, univ: "Universitas Hasanuddin (UNHAS)", prodi: "Fisika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 65, peminat: 180, passingGrade: 550, isFeatured: false },
-  
-  // --- TAMBAHAN KEPENDIDIKAN ---
-  { id: 21, univ: "Universitas Syiah Kuala (USK)", prodi: "Pendidikan Fisika", rumpun: "Saintek", kategori: "Kependidikan", dt: 40, peminat: 150, passingGrade: 520, isFeatured: false },
-  { id: 22, univ: "Universitas Andalas (UNAND)", prodi: "Pendidikan Dokter", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 100, peminat: 1600, passingGrade: 680, isFeatured: false },
-  { id: 23, univ: "Universitas Negeri Medan (UNIMED)", prodi: "Pendidikan Antropologi", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 120, passingGrade: 510, isFeatured: false },
-  { id: 24, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "Pendidikan Olahraga", rumpun: "Saintek", kategori: "Kependidikan", dt: 80, peminat: 400, passingGrade: 540, isFeatured: false },
-  { id: 25, univ: "Universitas Udayana (UNUD)", prodi: "Pariwisata", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 120, peminat: 800, passingGrade: 610, isFeatured: false },
+  // ============================================================
+  // ⭐ UTAMA: PENDIDIKAN NON FORMAL (PNF) / PENDIDIKAN LUAR SEKOLAH
+  // ============================================================
+  { id: 1, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Luar Sekolah / Pendidikan Non Formal (PNF)", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 654, passingGrade: 580, isFeatured: true, description: "✨ Pilihan Paling Cerdas! Lulusannya banyak dicari dari sektor pemerintahan, komunitas, hingga NGO internasional. Auto glow up masa depan! Bergabung dengan FIPP UNNES — kampus pendidikan nomor 1 Indonesia!" },
+  { id: 2, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 480, passingGrade: 575, isFeatured: false },
+  { id: 3, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 390, passingGrade: 570, isFeatured: false },
+  { id: 4, univ: "Universitas Negeri Malang (UM)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 310, passingGrade: 560, isFeatured: false },
+  { id: 5, univ: "Universitas Negeri Jakarta (UNJ)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 360, passingGrade: 585, isFeatured: false },
+  { id: 6, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 290, passingGrade: 555, isFeatured: false },
+  { id: 7, univ: "Universitas Negeri Medan (UNIMED)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 220, passingGrade: 530, isFeatured: false },
+  { id: 8, univ: "Universitas Negeri Padang (UNP)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 200, passingGrade: 525, isFeatured: false },
+  { id: 9, univ: "Universitas Negeri Makassar (UNM)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 210, passingGrade: 520, isFeatured: false },
+  { id: 10, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 30, peminat: 110, passingGrade: 500, isFeatured: false },
+
+  // ============================================================
+  // 📚 PRODI KEPENDIDIKAN UNNES (FIPP & FAKULTAS LAIN)
+  // ============================================================
+  { id: 11, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 1250, passingGrade: 625, isFeatured: false },
+  { id: 12, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Guru Sekolah Dasar (PGSD)", rumpun: "Soshum", kategori: "Kependidikan", dt: 200, peminat: 3500, passingGrade: 645, isFeatured: false },
+  { id: 13, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Guru PAUD", rumpun: "Soshum", kategori: "Kependidikan", dt: 60, peminat: 480, passingGrade: 570, isFeatured: false },
+  { id: 14, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Psikologi", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 1800, passingGrade: 650, isFeatured: false },
+  { id: 15, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Sosiologi dan Antropologi", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 310, passingGrade: 575, isFeatured: false },
+  { id: 16, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Matematika", rumpun: "Saintek", kategori: "Kependidikan", dt: 60, peminat: 890, passingGrade: 615, isFeatured: false },
+  { id: 17, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Bahasa Inggris", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 1100, passingGrade: 630, isFeatured: false },
+  { id: 18, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Ilmu Keolahragaan", rumpun: "Saintek", kategori: "Kependidikan", dt: 90, peminat: 700, passingGrade: 570, isFeatured: false },
+
+  // ============================================================
+  // 🏆 PRODI KEPENDIDIKAN PTN BESAR
+  // ============================================================
+  { id: 19, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "Pendidikan Khusus (PLB)", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 512, passingGrade: 590, isFeatured: false },
+  { id: 20, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 60, peminat: 1400, passingGrade: 635, isFeatured: false },
+  { id: 21, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 200, peminat: 4200, passingGrade: 655, isFeatured: false },
+  { id: 22, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "Pendidikan Bahasa Indonesia", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 1200, passingGrade: 630, isFeatured: false },
+  { id: 23, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Teknik Otomotif", rumpun: "Saintek", kategori: "Kependidikan", dt: 40, peminat: 600, passingGrade: 610, isFeatured: false },
+  { id: 24, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Bahasa Inggris", rumpun: "Soshum", kategori: "Kependidikan", dt: 60, peminat: 1100, passingGrade: 650, isFeatured: false },
+  { id: 25, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 55, peminat: 1050, passingGrade: 625, isFeatured: false },
+  { id: 26, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 180, peminat: 3800, passingGrade: 648, isFeatured: false },
+  { id: 27, univ: "Universitas Negeri Malang (UM)", prodi: "Pendidikan Jasmani", rumpun: "Saintek", kategori: "Kependidikan", dt: 90, peminat: 850, passingGrade: 560, isFeatured: false },
+  { id: 28, univ: "Universitas Negeri Malang (UM)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 60, peminat: 980, passingGrade: 620, isFeatured: false },
+  { id: 29, univ: "Universitas Negeri Malang (UM)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 160, peminat: 2900, passingGrade: 638, isFeatured: false },
+  { id: 30, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "Pendidikan Olahraga", rumpun: "Saintek", kategori: "Kependidikan", dt: 80, peminat: 400, passingGrade: 540, isFeatured: false },
+  { id: 31, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 820, passingGrade: 610, isFeatured: false },
+  { id: 32, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 150, peminat: 2600, passingGrade: 635, isFeatured: false },
+  { id: 33, univ: "Universitas Negeri Jakarta (UNJ)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 55, peminat: 1100, passingGrade: 630, isFeatured: false },
+  { id: 34, univ: "Universitas Negeri Jakarta (UNJ)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 120, peminat: 2400, passingGrade: 640, isFeatured: false },
+  { id: 35, univ: "Universitas Sebelas Maret (UNS)", prodi: "Pendidikan Guru PAUD", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 210, passingGrade: 585, isFeatured: false },
+  { id: 36, univ: "Universitas Sebelas Maret (UNS)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 780, passingGrade: 615, isFeatured: false },
+  { id: 37, univ: "Universitas Negeri Medan (UNIMED)", prodi: "Pendidikan Antropologi", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 120, passingGrade: 510, isFeatured: false },
+  { id: 38, univ: "Universitas Negeri Medan (UNIMED)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 140, peminat: 1900, passingGrade: 605, isFeatured: false },
+  { id: 39, univ: "Universitas Negeri Padang (UNP)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 130, peminat: 1750, passingGrade: 600, isFeatured: false },
+  { id: 40, univ: "Universitas Negeri Padang (UNP)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 700, passingGrade: 595, isFeatured: false },
+  { id: 41, univ: "Universitas Negeri Makassar (UNM)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 130, peminat: 1600, passingGrade: 595, isFeatured: false },
+  { id: 42, univ: "Universitas Negeri Makassar (UNM)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 650, passingGrade: 580, isFeatured: false },
+  { id: 43, univ: "Universitas Syiah Kuala (USK)", prodi: "Pendidikan Fisika", rumpun: "Saintek", kategori: "Kependidikan", dt: 40, peminat: 150, passingGrade: 520, isFeatured: false },
+  { id: 44, univ: "Universitas Syiah Kuala (USK)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 230, passingGrade: 510, isFeatured: false },
+  { id: 45, univ: "Universitas Lambung Mangkurat (ULM)", prodi: "Pendidikan Guru PAUD", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 180, passingGrade: 505, isFeatured: false },
+  { id: 46, univ: "Universitas Mulawarman (UNMUL)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 90, peminat: 900, passingGrade: 535, isFeatured: false },
+  { id: 47, univ: "Universitas Haluoleo (UHO)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 750, passingGrade: 520, isFeatured: false },
+  { id: 48, univ: "Universitas Pattimura (UNPATTI)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 620, passingGrade: 510, isFeatured: false },
+  { id: 49, univ: "Universitas Cenderawasih (UNCEN)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 60, peminat: 500, passingGrade: 495, isFeatured: false },
+  { id: 50, univ: "Universitas Tanjungpura (UNTAN)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 310, passingGrade: 515, isFeatured: false },
+
+  // ============================================================
+  // 🔬 SAINTEK & NON-KEPENDIDIKAN: PTN BESAR (UI, UGM, ITB, dll)
+  // ============================================================
+  { id: 51, univ: "Universitas Indonesia (UI)", prodi: "Pendidikan Dokter", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 54, peminat: 3045, passingGrade: 745, isFeatured: false },
+  { id: 52, univ: "Universitas Indonesia (UI)", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 60, peminat: 2800, passingGrade: 725, isFeatured: false },
+  { id: 53, univ: "Universitas Indonesia (UI)", prodi: "Ilmu Hubungan Internasional", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 40, peminat: 2100, passingGrade: 728, isFeatured: false },
+  { id: 54, univ: "Universitas Indonesia (UI)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 70, peminat: 2900, passingGrade: 740, isFeatured: false },
+  { id: 55, univ: "Universitas Gadjah Mada (UGM)", prodi: "Psikologi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 71, peminat: 3856, passingGrade: 720, isFeatured: false },
+  { id: 56, univ: "Universitas Gadjah Mada (UGM)", prodi: "Manajemen", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 100, peminat: 4100, passingGrade: 715, isFeatured: false },
+  { id: 57, univ: "Universitas Gadjah Mada (UGM)", prodi: "Teknik Elektro", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 1800, passingGrade: 710, isFeatured: false },
+  { id: 58, univ: "Universitas Gadjah Mada (UGM)", prodi: "Filsafat", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 45, peminat: 350, passingGrade: 610, isFeatured: false },
+  { id: 59, univ: "Institut Teknologi Bandung (ITB)", prodi: "Sekolah Teknik Elektro & Informatika (STEI)", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 150, peminat: 3200, passingGrade: 735, isFeatured: false },
+  { id: 60, univ: "Institut Teknologi Bandung (ITB)", prodi: "Teknik Kimia", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 100, peminat: 1600, passingGrade: 700, isFeatured: false },
+  { id: 61, univ: "Universitas Airlangga (UNAIR)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 2700, passingGrade: 730, isFeatured: false },
+  { id: 62, univ: "Universitas Airlangga (UNAIR)", prodi: "Kedokteran Gigi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 1800, passingGrade: 710, isFeatured: false },
+  { id: 63, univ: "Universitas Airlangga (UNAIR)", prodi: "Farmasi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 90, peminat: 1500, passingGrade: 695, isFeatured: false },
+  { id: 64, univ: "Universitas Brawijaya (UB)", prodi: "Ilmu Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 180, peminat: 2500, passingGrade: 660, isFeatured: false },
+  { id: 65, univ: "Universitas Brawijaya (UB)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 100, peminat: 2200, passingGrade: 680, isFeatured: false },
+  { id: 66, univ: "Universitas Brawijaya (UB)", prodi: "Agroekoteknologi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 300, peminat: 1100, passingGrade: 575, isFeatured: false },
+  { id: 67, univ: "Universitas Diponegoro (UNDIP)", prodi: "Ilmu Kelautan", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 120, peminat: 450, passingGrade: 580, isFeatured: false },
+  { id: 68, univ: "Universitas Diponegoro (UNDIP)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 1900, passingGrade: 670, isFeatured: false },
+  { id: 69, univ: "Universitas Diponegoro (UNDIP)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 70, peminat: 2100, passingGrade: 700, isFeatured: false },
+  { id: 70, univ: "Institut Teknologi Sepuluh Nopember (ITS)", prodi: "Teknik Fisika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 400, passingGrade: 640, isFeatured: false },
+  { id: 71, univ: "Institut Teknologi Sepuluh Nopember (ITS)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 100, peminat: 2400, passingGrade: 710, isFeatured: false },
+  { id: 72, univ: "Universitas Padjadjaran (UNPAD)", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 80, peminat: 3100, passingGrade: 695, isFeatured: false },
+  { id: 73, univ: "Universitas Padjadjaran (UNPAD)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 2600, passingGrade: 720, isFeatured: false },
+  { id: 74, univ: "Universitas Padjadjaran (UNPAD)", prodi: "Sastra Sunda", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 40, peminat: 150, passingGrade: 560, isFeatured: false },
+  { id: 75, univ: "Universitas Sebelas Maret (UNS)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 75, peminat: 2200, passingGrade: 695, isFeatured: false },
+  { id: 76, univ: "Universitas Sebelas Maret (UNS)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 70, peminat: 1700, passingGrade: 660, isFeatured: false },
+
+  // ============================================================
+  // 🌏 PTN REGIONAL NUSANTARA  
+  // ============================================================
+  { id: 77, univ: "Universitas Hasanuddin (UNHAS)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 90, peminat: 2100, passingGrade: 695, isFeatured: false },
+  { id: 78, univ: "Universitas Hasanuddin (UNHAS)", prodi: "Fisika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 65, peminat: 180, passingGrade: 550, isFeatured: false },
+  { id: 79, univ: "Universitas Hasanuddin (UNHAS)", prodi: "Teknik Sipil", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 100, peminat: 890, passingGrade: 610, isFeatured: false },
+  { id: 80, univ: "Universitas Udayana (UNUD) Bali", prodi: "Pariwisata", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 120, peminat: 800, passingGrade: 610, isFeatured: false },
+  { id: 81, univ: "Universitas Udayana (UNUD) Bali", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 1900, passingGrade: 700, isFeatured: false },
+  { id: 82, univ: "Universitas Andalas (UNAND)", prodi: "Pendidikan Dokter", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 100, peminat: 1600, passingGrade: 680, isFeatured: false },
+  { id: 83, univ: "Universitas Andalas (UNAND)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 960, passingGrade: 640, isFeatured: false },
+  { id: 84, univ: "Universitas Riau (UNRI)", prodi: "Teknik Kimia", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 400, passingGrade: 580, isFeatured: false },
+  { id: 85, univ: "Universitas Riau (UNRI)", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 70, peminat: 580, passingGrade: 560, isFeatured: false },
+  { id: 86, univ: "Universitas Jambi (UNJA)", prodi: "Agribisnis", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 350, passingGrade: 520, isFeatured: false },
+  { id: 87, univ: "Universitas Sriwijaya (UNSRI)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 70, peminat: 1100, passingGrade: 620, isFeatured: false },
+  { id: 88, univ: "Universitas Sriwijaya (UNSRI)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 1700, passingGrade: 675, isFeatured: false },
+  { id: 89, univ: "Universitas Bengkulu (UNIB)", prodi: "Agribisnis", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 70, peminat: 280, passingGrade: 510, isFeatured: false },
+  { id: 90, univ: "Universitas Lampung (UNILA)", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 65, peminat: 890, passingGrade: 600, isFeatured: false },
+  { id: 91, univ: "Universitas Lampung (UNILA)", prodi: "Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 120, peminat: 1100, passingGrade: 590, isFeatured: false },
+  { id: 92, univ: "Universitas Tanjungpura (UNTAN)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 1100, passingGrade: 635, isFeatured: false },
+  { id: 93, univ: "Universitas Lambung Mangkurat (ULM)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 980, passingGrade: 625, isFeatured: false },
+  { id: 94, univ: "Universitas Palangka Raya (UPR)", prodi: "Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 70, peminat: 280, passingGrade: 495, isFeatured: false },
+  { id: 95, univ: "Universitas Mulawarman (UNMUL)", prodi: "Teknik Kimia", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 50, peminat: 320, passingGrade: 540, isFeatured: false },
+  { id: 96, univ: "Universitas Sam Ratulangi (UNSRAT)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 70, peminat: 1200, passingGrade: 645, isFeatured: false },
+  { id: 97, univ: "Universitas Sam Ratulangi (UNSRAT)", prodi: "Akuakultur", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 210, passingGrade: 515, isFeatured: false },
+  { id: 98, univ: "Universitas Tadulako (UNTAD)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 55, peminat: 900, passingGrade: 580, isFeatured: false },
+  { id: 99, univ: "Universitas Haluoleo (UHO)", prodi: "Akuakultur", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 190, passingGrade: 505, isFeatured: false },
+  { id: 100, univ: "Universitas Pattimura (UNPATTI)", prodi: "Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 80, peminat: 450, passingGrade: 510, isFeatured: false },
+  { id: 101, univ: "Universitas Nusa Cendana (UNDANA)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 50, peminat: 700, passingGrade: 570, isFeatured: false },
+  { id: 102, univ: "Universitas Mataram (UNRAM)", prodi: "Kedokteran", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 1100, passingGrade: 620, isFeatured: false },
+  { id: 103, univ: "Universitas Mataram (UNRAM)", prodi: "Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 100, peminat: 600, passingGrade: 545, isFeatured: false },
+  { id: 104, univ: "Universitas Cenderawasih (UNCEN)", prodi: "Hukum", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 70, peminat: 300, passingGrade: 490, isFeatured: false },
+  { id: 105, univ: "Universitas Musamus (UNMUS) Merauke", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 40, peminat: 120, passingGrade: 475, isFeatured: false },
+
+  // ============================================================
+  // 🏛️ UNIVERSITAS KEPENDIDIKAN REGIONAL
+  // ============================================================
+  { id: 106, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 600, passingGrade: 505, isFeatured: false },
+  { id: 107, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 30, peminat: 200, passingGrade: 500, isFeatured: false },
+  { id: 108, univ: "Universitas Negeri Manado (UNIMA)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 130, passingGrade: 495, isFeatured: false },
+  { id: 109, univ: "Universitas Negeri Manado (UNIMA)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 550, passingGrade: 500, isFeatured: false },
+  { id: 110, univ: "Universitas Negeri Makassar (UNM)", prodi: "Pendidikan Teknik Informatika", rumpun: "Saintek", kategori: "Kependidikan", dt: 50, peminat: 580, passingGrade: 590, isFeatured: false },
 ];
