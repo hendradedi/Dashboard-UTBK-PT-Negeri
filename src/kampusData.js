@@ -1,17 +1,17 @@
 export const ptnData = [
   // ============================================================
-  // ⭐ UTAMA: PENDIDIKAN NON FORMAL (PNF) / PENDIDIKAN LUAR SEKOLAH
+  // ⭐ UTAMA: PENDIDIKAN NON FORMAL (PNF)
   // ============================================================
-  { id: 1, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Luar Sekolah / Pendidikan Non Formal (PNF)", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 654, passingGrade: 580, isFeatured: true, description: "✨ Pilihan Paling Cerdas! Lulusannya banyak dicari dari sektor pemerintahan, komunitas, hingga NGO internasional. Auto glow up masa depan! Bergabung dengan FIPP UNNES — kampus pendidikan nomor 1 Indonesia!" },
-  { id: 2, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 480, passingGrade: 575, isFeatured: false },
-  { id: 3, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 390, passingGrade: 570, isFeatured: false },
-  { id: 4, univ: "Universitas Negeri Malang (UM)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 310, passingGrade: 560, isFeatured: false },
-  { id: 5, univ: "Universitas Negeri Jakarta (UNJ)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 360, passingGrade: 585, isFeatured: false },
-  { id: 6, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 290, passingGrade: 555, isFeatured: false },
-  { id: 7, univ: "Universitas Negeri Medan (UNIMED)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 220, passingGrade: 530, isFeatured: false },
-  { id: 8, univ: "Universitas Negeri Padang (UNP)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 200, passingGrade: 525, isFeatured: false },
-  { id: 9, univ: "Universitas Negeri Makassar (UNM)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 210, passingGrade: 520, isFeatured: false },
-  { id: 10, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 30, peminat: 110, passingGrade: 500, isFeatured: false },
+  { id: 1, univ: "Universitas Negeri Semarang (UNNES)", prodi: "Pendidikan Non Formal (PNF)", rumpun: "Soshum", kategori: "Kependidikan", dt: 80, peminat: 654, passingGrade: 580, isFeatured: true, description: "✨ Pilihan Paling Cerdas! Lulusannya banyak dicari dari sektor pemerintahan, komunitas, hingga NGO internasional. Auto glow up masa depan! Bergabung dengan FIPP UNNES — kampus pendidikan nomor 1 Indonesia!" },
+  { id: 2, univ: "Universitas Pendidikan Indonesia (UPI) Bandung", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 480, passingGrade: 575, isFeatured: false },
+  { id: 3, univ: "Universitas Negeri Yogyakarta (UNY)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 390, passingGrade: 570, isFeatured: false },
+  { id: 4, univ: "Universitas Negeri Malang (UM)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 50, peminat: 310, passingGrade: 560, isFeatured: false },
+  { id: 5, univ: "Universitas Negeri Jakarta (UNJ)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 360, passingGrade: 585, isFeatured: false },
+  { id: 6, univ: "Universitas Negeri Surabaya (UNESA)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 290, passingGrade: 555, isFeatured: false },
+  { id: 7, univ: "Universitas Negeri Medan (UNIMED)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 220, passingGrade: 530, isFeatured: false },
+  { id: 8, univ: "Universitas Negeri Padang (UNP)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 40, peminat: 200, passingGrade: 525, isFeatured: false },
+  { id: 9, univ: "Universitas Negeri Makassar (UNM)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 45, peminat: 210, passingGrade: 520, isFeatured: false },
+  { id: 10, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 30, peminat: 110, passingGrade: 500, isFeatured: false },
 
   // ============================================================
   // 📚 PRODI KEPENDIDIKAN UNNES (FIPP & FAKULTAS LAIN)
@@ -129,7 +129,7 @@ export const ptnData = [
   // ============================================================
   { id: 106, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 600, passingGrade: 505, isFeatured: false },
   { id: 107, univ: "Universitas Negeri Gorontalo (UNG)", prodi: "Bimbingan dan Konseling", rumpun: "Soshum", kategori: "Kependidikan", dt: 30, peminat: 200, passingGrade: 500, isFeatured: false },
-  { id: 108, univ: "Universitas Negeri Manado (UNIMA)", prodi: "Pendidikan Luar Sekolah", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 130, passingGrade: 495, isFeatured: false },
+  { id: 108, univ: "Universitas Negeri Manado (UNIMA)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 130, passingGrade: 495, isFeatured: false },
   { id: 109, univ: "Universitas Negeri Manado (UNIMA)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 550, passingGrade: 500, isFeatured: false },
   { id: 110, univ: "Universitas Negeri Makassar (UNM)", prodi: "Pendidikan Teknik Informatika", rumpun: "Saintek", kategori: "Kependidikan", dt: 50, peminat: 580, passingGrade: 590, isFeatured: false },
 ];
