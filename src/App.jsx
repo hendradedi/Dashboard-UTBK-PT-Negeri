@@ -15,7 +15,9 @@ import {
   Dices,
   Star,
   Sparkles,
-  Award
+  Award,
+  Share2,
+  Flame
 } from 'lucide-react';
 import { ptnData } from './kampusData';
 
@@ -58,6 +60,13 @@ export default function App() {
 
   const topLoosest = useMemo(() => {
     return [...processedData].filter(i => !i.isFeatured).sort((a, b) => b.keketatan - a.keketatan).slice(0, 4);
+  }, [processedData]);
+
+  const trendingProdi = useMemo(() => {
+    const pnf = processedData.find(item => item.isFeatured);
+    // Ambil prodi dengan peminat terbanyak sebagai "Trending"
+    const others = [...processedData].filter(i => !i.isFeatured).sort((a, b) => b.peminat - a.peminat).slice(0, 4);
+    return [pnf, ...others].filter(Boolean);
   }, [processedData]);
 
   const filteredProdi = useMemo(() => {
@@ -103,6 +112,26 @@ export default function App() {
       setGachaResult(processedData[randomIndex]);
       setIsSpinning(false);
     }, 1500);
+  };
+
+  const handleShare = (prodiName, type) => {
+    const text = type === 'gacha' 
+      ? `Wah, menurut KampusID jodoh kampus gue di ${prodiName}! 🎲 Cek jodoh lo juga!`
+      : `Peluang lolos gue di ${prodiName} gede banget! 🚀 Berkat Kalkulator KampusID!`;
+      
+    if (navigator.share) {
+      navigator.share({
+        title: 'KampusID',
+        text: text,
+        url: window.location.href,
+      }).catch(err => {
+         navigator.clipboard.writeText(text);
+         alert("Teks dicopy! Yuk paste di IG Story/X/WhatsApp Bareng Screenshot Layar!");
+      });
+    } else {
+      navigator.clipboard.writeText(text);
+      alert("Teks berhasil dicopy! Jangan lupa Screenshot layar ini trus post di Story ya!");
+    }
   };
 
   return (
@@ -313,6 +342,29 @@ export default function App() {
                   </div>
                 </div>
               </div>
+
+              {/* TRENDING PRODI */}
+              <div className="bg-slate-800/40 rounded-3xl border border-slate-700/50 backdrop-blur-md overflow-hidden relative">
+                  <div className="px-6 py-5 border-b border-slate-700/50 flex items-center gap-3 relative z-10">
+                    <div className="p-2 bg-orange-500/20 rounded-lg"><Flame className="w-5 h-5 text-orange-400" /></div>
+                    <h2 className="text-lg font-bold text-white">Trending Hari Ini 🔥</h2>
+                  </div>
+                  <div className="divide-y divide-slate-700/50 relative z-10 flex overflow-x-auto p-5 gap-4 snap-x">
+                    {trendingProdi.map((item, idx) => (
+                      <div key={item.id} className="min-w-[240px] shrink-0 bg-slate-900/60 p-5 rounded-2xl border border-slate-700 snap-center relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+                        <div className="absolute top-0 right-0 p-4 bg-gradient-to-bl from-orange-500/10 to-transparent w-full h-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="flex justify-between items-start mb-3">
+                          <span className="text-2xl font-black text-slate-700">#{idx + 1}</span>
+                          <span className="text-xs font-bold px-2 py-1 bg-orange-500/10 text-orange-400 border border-orange-500/20 rounded-lg flex items-center gap-1">
+                            <Flame className="w-3 h-3" /> {item.peminat.toLocaleString('id-ID')} Peminat
+                          </span>
+                        </div>
+                        <h4 className="font-bold text-white text-lg leading-tight mb-1">{item.prodi}</h4>
+                        <p className="text-sm text-slate-400">{item.univ}</p>
+                      </div>
+                    ))}
+                  </div>
+              </div>
             </div>
           )}
 
@@ -463,9 +515,14 @@ export default function App() {
                           <p className="text-slate-400">{res.univ}</p>
                         </div>
 
-                        <div className="text-left md:text-right">
-                          <p className="text-sm text-slate-500 mb-1">Target Skor Kampus:</p>
-                          <p className="text-3xl font-black text-emerald-400">{res.passingGrade}</p>
+                        <div className="text-left md:text-right mt-4 md:mt-0 flex flex-col md:items-end gap-2">
+                          <div>
+                            <p className="text-sm text-slate-500 mb-1">Target Skor Kampus:</p>
+                            <p className="text-3xl font-black text-emerald-400">{res.passingGrade}</p>
+                          </div>
+                          <button onClick={() => handleShare(res.prodi, 'calc')} className="inline-flex items-center justify-center md:justify-end gap-1.5 px-3 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-bold rounded-lg transition-colors mt-1">
+                            <Share2 className="w-3.5 h-3.5" /> Pamerin Screen
+                          </button>
                         </div>
                       </div>
                     ))}
@@ -497,18 +554,22 @@ export default function App() {
                   <div className="absolute top-[-50%] left-[-10%] w-full h-[200%] bg-gradient-to-br from-purple-500/10 to-pink-500/10 rotate-12 pointer-events-none"></div>
                   <p className="text-pink-400 font-bold uppercase tracking-widest text-sm mb-4">✨ JODOH KAMU ADALAH ✨</p>
                   <h3 className="text-3xl font-black text-white mb-2">{gachaResult.prodi}</h3>
-                  <p className="text-xl text-slate-300 font-medium">{gachaResult.univ}</p>
-
-                  <div className="mt-8 flex items-center justify-center gap-4">
-                    <div className="text-center">
-                      <p className="text-slate-500 text-xs font-bold uppercase">Keketatan</p>
-                      <p className="text-xl font-bold text-white mt-1">{gachaResult.keketatan}%</p>
+                  <p className="text-xl text-slate-300 font-medium mb-6">{gachaResult.univ}</p>
+                  <div className="mt-8 flex flex-col items-center gap-4">
+                    <div className="flex items-center justify-center gap-4 w-full">
+                      <div className="text-center">
+                        <p className="text-slate-500 text-xs font-bold uppercase">Keketatan</p>
+                        <p className="text-xl font-bold text-white mt-1">{gachaResult.keketatan}%</p>
+                      </div>
+                      <div className="w-px h-10 bg-slate-700"></div>
+                      <div className="text-center">
+                        <p className="text-slate-500 text-xs font-bold uppercase">Kategori</p>
+                        <p className="text-xl font-bold text-white mt-1">{gachaResult.kategori}</p>
+                      </div>
                     </div>
-                    <div className="w-px h-10 bg-slate-700"></div>
-                    <div className="text-center">
-                      <p className="text-slate-500 text-xs font-bold uppercase">Kategori</p>
-                      <p className="text-xl font-bold text-white mt-1">{gachaResult.kategori}</p>
-                    </div>
+                    <button onClick={() => handleShare(gachaResult.prodi, 'gacha')} className="mt-2 inline-flex items-center gap-2 px-6 py-3 bg-pink-500/20 hover:bg-pink-500/30 border border-pink-500/50 text-pink-300 font-bold rounded-xl transition-all shadow-[0_0_15px_rgba(236,72,153,0.2)]">
+                      <Share2 className="w-5 h-5" /> Pamerin ke Story!
+                    </button>
                   </div>
                 </div>
               )}
