@@ -20,7 +20,8 @@ import {
   Flame,
   Instagram,
   Youtube,
-  Globe
+  Globe,
+  Info
 } from 'lucide-react';
 import { ptnData } from './kampusData';
 
@@ -600,6 +601,17 @@ export default function App() {
               )}
             </div>
           )}
+
+          {/* DISCLAIMER FOOTER */}
+          <div className="mt-12 pt-8 border-t border-slate-800/50 text-center pb-4 relative z-10">
+             <div className="inline-flex items-start md:items-center gap-2 text-left md:text-center text-xs text-slate-500 bg-slate-900/50 px-4 py-3 rounded-xl border border-slate-800">
+                <Info className="w-4 h-4 shrink-0 text-indigo-400 mt-0.5 md:mt-0" />
+                <p>
+                  <strong className="text-slate-400">Disclaimer:</strong> Data ini adalah hasil pengolahan prediksi dan berbagai sumber terbuka di internet. 
+                  Sangat disarankan untuk selalu melakukan <em>cross-check</em> informasi valid langsung di website universitas atau portal resmi SNPMB.
+                </p>
+             </div>
+          </div>
 
         </div>
       </main>
