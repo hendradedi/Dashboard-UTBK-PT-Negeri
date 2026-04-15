@@ -132,4 +132,20 @@ export const ptnData = [
   { id: 108, univ: "Universitas Negeri Manado (UNIMA)", prodi: "Pendidikan Non Formal", rumpun: "Soshum", kategori: "Kependidikan", dt: 35, peminat: 130, passingGrade: 495, isFeatured: false },
   { id: 109, univ: "Universitas Negeri Manado (UNIMA)", prodi: "PGSD", rumpun: "Soshum", kategori: "Kependidikan", dt: 70, peminat: 550, passingGrade: 500, isFeatured: false },
   { id: 110, univ: "Universitas Negeri Makassar (UNM)", prodi: "Pendidikan Teknik Informatika", rumpun: "Saintek", kategori: "Kependidikan", dt: 50, peminat: 580, passingGrade: 590, isFeatured: false },
+
+  // ============================================================
+  // 📚 PTN FAVORIT TAMBAHAN (UPDATE DARI DATA SNBT TERVALIDASI)
+  // ============================================================
+  { id: 111, univ: "Institut Pertanian Bogor (IPB)", prodi: "Kedokteran Hewan", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 1540, passingGrade: 685, isFeatured: false },
+  { id: 112, univ: "Institut Pertanian Bogor (IPB)", prodi: "Ilmu Gizi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 55, peminat: 1820, passingGrade: 690, isFeatured: false },
+  { id: 113, univ: "Universitas Sumatera Utara (USU)", prodi: "Agribisnis", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 120, peminat: 1450, passingGrade: 615, isFeatured: false },
+  { id: 114, univ: "Universitas Sumatera Utara (USU)", prodi: "Ilmu Kesehatan Masyarakat", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 150, peminat: 2100, passingGrade: 640, isFeatured: false },
+  { id: 115, univ: "Universitas Jenderal Soedirman (UNSOED)", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 80, peminat: 1950, passingGrade: 650, isFeatured: false },
+  { id: 116, univ: "Universitas Jenderal Soedirman (UNSOED)", prodi: "Keperawatan", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 90, peminat: 1600, passingGrade: 620, isFeatured: false },
+  { id: 117, univ: "UPN Veteran Jakarta", prodi: "Ilmu Komunikasi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 170, peminat: 3800, passingGrade: 665, isFeatured: false },
+  { id: 118, univ: "UPN Veteran Jakarta", prodi: "Sistem Informasi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 90, peminat: 2100, passingGrade: 655, isFeatured: false },
+  { id: 119, univ: "Universitas Jember (UNEJ)", prodi: "Pendidikan Dokter Gigi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 80, peminat: 1350, passingGrade: 645, isFeatured: false },
+  { id: 120, univ: "Universitas Jember (UNEJ)", prodi: "Sistem Informasi", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 60, peminat: 950, passingGrade: 610, isFeatured: false },
+  { id: 121, univ: "UIN Syarif Hidayatullah Jakarta", prodi: "Psikologi", rumpun: "Soshum", kategori: "Non-Kependidikan", dt: 80, peminat: 2100, passingGrade: 655, isFeatured: false },
+  { id: 122, univ: "UIN Sunan Kalijaga Yogyakarta", prodi: "Teknik Informatika", rumpun: "Saintek", kategori: "Non-Kependidikan", dt: 50, peminat: 1200, passingGrade: 630, isFeatured: false },
 ];
