@@ -502,7 +502,7 @@ export default function App() {
             <div className="max-w-3xl mx-auto space-y-8 relative z-10">
               <div className="bg-gradient-to-br from-indigo-900/40 to-purple-900/40 p-8 rounded-3xl border border-indigo-500/20 shadow-2xl backdrop-blur-xl">
                 <h2 className="text-2xl font-black text-white mb-2">Masukkan Hasil Try Out Kamu!</h2>
-                <p className="text-slate-400 mb-8">Nggak usah overthinking, masukin nilai realistis TO kamu dan sistem bakal nyari jurusan 3 teratas yang paling aman buat kamu daftar.</p>
+                <p className="text-slate-400 mb-8">Nggak usah overthinking, masukin nilai realistis TO kamu dan sistem bakal nyari jurusan 5 teratas yang paling aman buat kamu daftar.</p>
 
                 <div className="flex flex-col md:flex-row gap-4">
                   <input
