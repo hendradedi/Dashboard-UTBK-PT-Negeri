@@ -17,7 +17,10 @@ import {
   Sparkles,
   Award,
   Share2,
-  Flame
+  Flame,
+  Instagram,
+  Youtube,
+  Globe
 } from 'lucide-react';
 import { ptnData } from './kampusData';
 
@@ -196,6 +199,28 @@ export default function App() {
 
       {/* Main Content */}
       <main className="flex-1 overflow-y-auto w-full relative z-10 scrollbar-hide">
+        {/* SOCIAL MEDIA PNF UNNES (Top Right) */}
+        <div className="absolute top-6 right-8 lg:top-8 lg:right-12 z-40 hidden md:flex items-center gap-3 animate-in slide-in-from-top-8 duration-700 fade-in">
+          <div className="flex items-center p-2 bg-slate-900/50 backdrop-blur-md border border-slate-700/50 rounded-2xl shadow-2xl gap-2">
+            <div className="text-right mr-2 border-r border-slate-700 pr-3">
+              <p className="text-[9px] uppercase font-bold text-slate-500 tracking-widest leading-none mb-1">Official Media</p>
+              <p className="text-sm font-black bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 leading-none">PNF UNNES</p>
+            </div>
+            <a href="https://www.instagram.com/pnfunnes/" target="_blank" rel="noreferrer" title="Instagram PNF" className="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-600 flex items-center justify-center text-pink-500 hover:scale-110 hover:bg-gradient-to-tr hover:from-orange-500 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:border-transparent transition-all shadow-[0_4px_15px_rgba(0,0,0,0.2)] group">
+              <Instagram className="w-4 h-4 group-hover:scale-110 transition-transform" />
+            </a>
+            <a href="https://www.tiktok.com/@prodi.pnf.unnes" target="_blank" rel="noreferrer" title="TikTok PNF" className="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-600 flex items-center justify-center text-slate-200 hover:scale-110 hover:bg-black hover:text-white hover:border-transparent transition-all shadow-[0_4px_15px_rgba(0,0,0,0.2)] group">
+              <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 group-hover:scale-110 transition-transform"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z" /></svg>
+            </a>
+            <a href="https://www.youtube.com/@PendidikanLuarSekolahFIPUNNES/videos" target="_blank" rel="noreferrer" title="YouTube PNF" className="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-600 flex items-center justify-center text-red-500 hover:scale-110 hover:bg-red-500 hover:text-white hover:border-transparent transition-all shadow-[0_4px_15px_rgba(0,0,0,0.2)] group">
+              <Youtube className="w-4 h-4 group-hover:scale-110 transition-transform" />
+            </a>
+            <a href="http://www.pnfunnes.org" target="_blank" rel="noreferrer" title="Website PNF" className="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-600 flex items-center justify-center text-sky-400 hover:scale-110 hover:bg-sky-500 hover:text-white hover:border-transparent transition-all shadow-[0_4px_15px_rgba(0,0,0,0.2)] group">
+              <Globe className="w-4 h-4 group-hover:scale-110 transition-transform" />
+            </a>
+          </div>
+        </div>
+
         <header className="lg:hidden h-16 bg-slate-900/50 backdrop-blur-xl border-b border-slate-700/50 flex items-center justify-between px-4 sticky top-0 z-30">
           <div className="flex items-center gap-2 font-bold text-lg text-white">
             <div className="p-1.5 bg-indigo-500 rounded-lg">
